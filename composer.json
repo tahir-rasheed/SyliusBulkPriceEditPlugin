@@ -1,5 +1,5 @@
 {
-    "name": "tahir-rasheed/sylius-bulk_price-edit-plugin",
+    "name": "tahir-rasheed/sylius-bulk-price-edit-plugin",
     "type": "symfony-bundle",
     "description": "Bulk price edit plugin for Sylius.",
     "keywords": [

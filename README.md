@@ -13,7 +13,7 @@ This plugin is a proof of concept of something great to be.
 ### Download
 
 ```bash
-$ composer require tahir-rasheed/sylius-bulk-edit-plugin
+$ composer require tahir-rasheed/sylius-bulk_price-edit-plugin
 ```
 
 ### Import configuration

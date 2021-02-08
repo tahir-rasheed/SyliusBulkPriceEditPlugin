@@ -13,24 +13,24 @@ This plugin is a proof of concept of something great to be.
 ### Download
 
 ```bash
-$ composer require setono/sylius-bulk-edit-plugin
+$ composer require tahir-rasheed/sylius-bulk-edit-plugin
 ```
 
 ### Import configuration
 
 ```yaml
-# config/packages/setono_sylius_bulk_edit.yaml
+# config/packages/sylius_bulk_edit.yaml
 imports:
     # ...
-    - { resource: "@SetonoSyliusBulkEditPlugin/Resources/config/app/config.yaml" }
+    - { resource: "@TahirRasheedSyliusBulkEditPlugin/Resources/config/app/config.yaml" }
 ```
 
 ### Import routes
    
 ```yaml
-# config/routes/setono_sylius_bulk_edit.yaml
+# config/routes/sylius_bulk_edit.yaml
 setono_sylius_bulk_edit:
-    resource: "@SetonoSyliusBulkEditPlugin/Resources/config/routes.yaml"
+    resource: "@TahirRasheedSyliusBulkEditPlugin/Resources/config/routes.yaml"
 ```
 
 or if your app doesn't use locales:
@@ -38,7 +38,7 @@ or if your app doesn't use locales:
 ```yaml
 # config/routes.yaml
 setono_sylius_bulk_edit:
-    resource: "@SetonoSyliusBulkEditPlugin/Resources/config/routes_no_locale.yaml"
+    resource: "@TahirRasheedSyliusBulkEditPlugin/Resources/config/routes_no_locale.yaml"
 ```
 
 ### Add plugin class to your `bundles.php`:
@@ -48,7 +48,7 @@ setono_sylius_bulk_edit:
 $bundles = [
     // ...
 
-    Setono\SyliusBulkEditPlugin\SetonoSyliusBulkEditPlugin::class => ['all' => true],
+    TahirRasheed\SyliusBulkEditPlugin\TahirRasheedSyliusBulkEditPlugin::class => ['all' => true],
 
     // ...
 ];

@@ -1,15 +1,15 @@
 sylius_grid:
     templates:
         bulk_action:
-            edit: "@SetonoSyliusBulkEditPlugin/grid/bulk_action/edit.html.twig"
-            
+            edit: "@TahirRasheedSyliusBulkEditPlugin/grid/bulk_action/edit.html.twig"
+
     grids:
         sylius_admin_product:
             actions:
                 bulk:
                     edit:
                         type: edit
-                        label: Edit
+                        label: Edit Price
                         options:
                             link:
-                                route: setono_sylius_bulk_edit_admin_bulk_edit_products
+                                route: sylius_bulk_edit_admin_bulk_edit_products

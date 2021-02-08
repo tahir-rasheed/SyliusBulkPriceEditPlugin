@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Setono\SyliusBulkEditPlugin\Controller\Action;
+namespace TahirRasheed\SyliusBulkEditPlugin\Controller\Action;
 
-use Setono\SyliusBulkEditPlugin\Repository\ProductRepositoryInterface;
+use App\Doctrine\ORM\ProductRepository;
 use Sylius\Component\Channel\Repository\ChannelRepositoryInterface;
 use Sylius\Component\Core\Model\ChannelInterface;
 use Sylius\Component\Core\Model\ChannelPricingInterface;
@@ -17,16 +17,16 @@ use Twig\Environment;
 
 final class BulkEditProductsAction
 {
-    private ProductRepositoryInterface $productRepository;
+    private $productRepository;
 
-    private ProductVariantRepositoryInterface $productVariantRepository;
+    private $productVariantRepository;
 
-    private ChannelRepositoryInterface $channelRepository;
+    private $channelRepository;
 
-    private Environment $twig;
+    private $twig;
 
     public function __construct(
-        ProductRepositoryInterface $productRepository,
+        ProductRepository $productRepository,
         ProductVariantRepositoryInterface $productVariantRepository,
         ChannelRepositoryInterface $channelRepository,
         Environment $twig
@@ -72,7 +72,7 @@ final class BulkEditProductsAction
 
         $products = $this->productRepository->findByIds($request->get('ids', []));
 
-        return new Response($this->twig->render('@SetonoSyliusBulkEditPlugin/admin/bulk_edit/index.html.twig', [
+        return new Response($this->twig->render('@TahirRasheedSyliusBulkEditPlugin/admin/bulk_edit/index.html.twig', [
             'products' => $products,
             'channels' => $channels,
         ]));

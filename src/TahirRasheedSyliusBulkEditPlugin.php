@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Setono\SyliusBulkEditPlugin;
+namespace TahirRasheed\SyliusBulkEditPlugin;
 
 use Sylius\Bundle\CoreBundle\Application\SyliusPluginTrait;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-final class SetonoSyliusBulkEditPlugin extends Bundle
+final class TahirRasheedSyliusBulkEditPlugin extends Bundle
 {
     use SyliusPluginTrait;
 }

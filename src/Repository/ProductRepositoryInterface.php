@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Setono\SyliusBulkEditPlugin\Repository;
+namespace TahirRasheed\SyliusBulkEditPlugin\Repository;
 
 use Sylius\Component\Core\Model\ProductInterface;
 use Sylius\Component\Core\Repository\ProductRepositoryInterface as BaseProductRepositoryInterface;

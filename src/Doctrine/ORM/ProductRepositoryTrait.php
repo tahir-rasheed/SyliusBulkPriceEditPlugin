@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Setono\SyliusBulkEditPlugin\Doctrine\ORM;
+namespace TahirRasheed\SyliusBulkEditPlugin\Doctrine\ORM;
 
 use function assert;
 use Doctrine\ORM\EntityRepository;

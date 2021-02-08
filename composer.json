@@ -1,14 +1,14 @@
 {
-    "name": "setono/sylius-bulk-edit-plugin",
+    "name": "tahir-rasheed/sylius-bulk_price-edit-plugin",
     "type": "symfony-bundle",
-    "description": "Setono example plugin for Sylius.",
+    "description": "Bulk price edit plugin for Sylius.",
     "keywords": [
         "sylius",
         "sylius-plugin"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.4",
+        "php": "^7.2",
         "doctrine/orm": "^2.7",
         "sylius/channel": "^1.0",
         "sylius/core": "^1.0",
@@ -47,12 +47,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Setono\\SyliusBulkEditPlugin\\": "src/"
+            "TahirRasheed\\SyliusBulkEditPlugin\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Setono\\SyliusBulkEditPlugin\\": "tests/"
+            "Tests\\TahirRasheed\\SyliusBulkEditPlugin\\": "tests/"
         },
         "classmap": [
             "tests/Application/Kernel.php"
